@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cvItem"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="asdasdasdas"
+                android:layout_toLeftOf="@+id/txtMin"
+                android:gravity="center"
+                android:id="@+id/txt"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:id="@+id/txtMin"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:visibility="invisible"
+                android:id="@+id/txtPlus"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cvItem"
+        android:id="@+id/rvDalam"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
